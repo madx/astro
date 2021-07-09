@@ -1,5 +1,21 @@
 # astro
 
+## 0.17.2
+
+### Patch Changes
+
+- fb78b76: Improve error handling for unsupported Node versions
+- d93f768: Add support for components defined in Frontmatter. Previously, the following code would throw an error. Now it is officially supported!
+
+  ```astro
+  ---
+  const { level = 1 } = Astro.props;
+  const Element = `h${level}`;
+  ---
+
+  <Element>Hello world!</Element>
+  ```
+
 ## 0.17.1
 
 ### Patch Changes
